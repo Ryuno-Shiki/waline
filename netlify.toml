@@ -1,2 +1,12 @@
-[functions]
-  directory = "netlify/functions/"
+[build]
+  functions = "functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/waline"
+  status = 200
+
+[[redirects]]
+  from = "/ui/*"
+  to = "/.netlify/functions/waline"
+  status = 200
