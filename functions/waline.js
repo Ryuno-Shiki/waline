@@ -1,1 +1,3 @@
-module.exports = require('@waline/vercel');
+const waline = require('@waline/vercel');
+
+module.exports = waline();
